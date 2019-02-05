@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Getting Started with HTML</title>
+</head>
+<body>
+
+<h1>HTML Quick Reference</h1>
+
+<div>
+	<h4>Table of Contents</h4>
+	<ol>
+		<li><a href="#anatomy">Anatomy of an HTML Page</a></li>
+		<li><a href="#headers">Headers</a></li>
+		<li><a href="#paragraph">Paragraphs</a></li>
+		<li><a href="#commontags">Common Text Formatting Tags</a></li>
+		<li><a href="#orderedlist">Ordered Lists</a></li>
+		<li><a href="#unorderedlist">Unordered Lists</a></li>
+		<li><a href="#tables">Tables</a></li>
+		<li><a href="#tableheaders">Table Headers</a></li>
+		<li><a href="#captions">Table Captions (titles)</a></li>
+		<li><a href="#links">Hyperlinks (links)</a></li>
+	</ol>
+	<p>Hungry for more? Check out <a href="https://www.w3schools.com/html/" target="_blank">W3 Schools HTML Tutorials</a></p>
+</div>
+
+<hr>
+
+<a name="anatomy"><h3>Anatomy of an HTML Page</h3></a>
+<p>The basic HTML page is divided into head and body sections. The body contains everything shown on the page.
+	The head contains information about the page, but not displayed on it.</p>
+<pre>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Hello, World!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+
+<hr>
+
+<a name="headers"><h3>Headers</h3></a>
+<p>Headers are section titles. Each section of this help page has a header.</p>
+<pre>
+<code>
+<h1>&lt;h1&gt;Largest Header&lt;/h1&gt;</h1>
+<h2>&lt;h2&gt;Larger Header&lt;/h2&gt;</h2>
+<h3>&lt;h3&gt;Normal Header&lt;/h3&gt;</h3>
+<h4>&lt;h4&gt;Small Header&lt;/h4&gt;</h4>
+<h5>&lt;h5&gt;Smaller Header&lt;/h5&gt;</h5>
+<h6>&lt;h6&gt;Smallest Header&lt;/h6&gt;</h6>
+</code>
+</pre>
+
+<hr>
+
+<a name="paragraph"><h3>Paragraphs</h3></a>
+<p>Paragraph tags wrap each paragraph on your page.</p>
+<pre>
+<code>
+&lt;p&gt;Text inside paragraph 1&lt;/p&gt;
+&lt;p&gt;Text inside paragraph 2&lt;/p&gt;
+&lt;p&gt;Text inside paragraph 3&lt;/p&gt;
+</code>
+</pre>
+
+<hr>
+
+<a name="commontags"><h3>Common Text Formatting Tags</h3></a>
+<p>These tags are used to add some style to your text.</p>
+<pre>
+<code>
+&lt;b&gt;<b>This text is bold!</b>&lt;/b&gt;
+&lt;i&gt;<i>This is italics</i>&lt;/i&gt;
+&lt;small&gt;<small>This is small</small>&lt;/small&gt;
+This is the 4&lt;sup&gt;<sup>th</sup>&lt;/sup&gt; line
+This line&lt;br&gt;<br>splits in the middle
+</code>
+</pre>
+
+<hr>
+
+<a name="orderedlist"><h3>Ordered List</h3></a>
+<p>Use ordered lists to show numbered lists of text.</p>
+<table>
+	<tr>
+		<td>
+			<code>
+				<pre>
+&lt;ol&gt;
+    &lt;li&gt;Pizza&lt;/li&gt;
+    &lt;li&gt;Tacos&lt;/li&gt;
+    &lt;li&gt;Hamburgers&lt;/li&gt;
+&lt;/ol&gt;
+				</pre>
+			</code>
+		</td>
+		<td>
+			<ol>
+				<li>Pizza</li>
+				<li>Tacos</li>
+				<li>Hamburgers</li>
+			</ol>
+		</td>
+	</tr>
+</table>
+
+<hr>
+
+<a name="unorderedlist"><h3>Unordered List</h3></a>
+<p>Use unordered lists to group items together, like text on a slide.</p>
+<table>
+	<tr>
+		<td>
+			<code>
+				<pre>
+&lt;ul&gt;
+    &lt;li&gt;Pizza&lt;/li&gt;
+    &lt;li&gt;Tacos&lt;/li&gt;
+    &lt;li&gt;Hamburgers&lt;/li&gt;
+&lt;/ul&gt;
+				</pre>
+			</code>
+		</td>
+		<td>
+			<ul>
+				<li>Pizza</li>
+				<li>Tacos</li>
+				<li>Hamburgers</li>
+			</ul>
+		</td>
+	</tr>
+</table>
+
+<hr>
+
+<a name="tables"><h3>Tables</h3></a>
+<p>Use tables to show ordered information using rows and columns.</p>
+<div style="width: 300px; float: left;">
+<pre>
+<code>
+&lt;table&gt;
+&lt;tr&gt;
+    &lt;td&gt;Row 1 Column 1&lt;/td&gt;
+    &lt;td&gt;Row 1 Column 2&lt;/td&gt;
+    &lt;td&gt;Row 1 Column 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Row 2 Column 1&lt;/td&gt;
+    &lt;td&gt;Row 2 Column 2&lt;/td&gt;
+    &lt;td&gt;Row 2 Column 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Row 3 Column 1&lt;/td&gt;
+    &lt;td&gt;Row 3 Column 2&lt;/td&gt;
+    &lt;td&gt;Row 3 Column 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+</code>
+</pre>
+</div>
+<div style="width: 500px; padding-top: 30px; float: left;">
+	<table width="100%" cellpadding="2" cellspacing="2" border="1">
+	<tr>
+		<td>Row 1 Column 1</td>
+		<td>Row 1 Column 2</td>
+		<td>Row 1 Column 3</td>
+	</tr>
+	<tr>
+		<td>Row 2 Column 1</td>
+		<td>Row 2 Column 2</td>
+		<td>Row 2 Column 3</td>
+	</tr>
+	<tr>
+		<td>Row 3 Column 1</td>
+		<td>Row 3 Column 2</td>
+		<td>Row 3 Column 3</td>
+	</tr>
+	</table>
+</div>
+<br clear="all">
+<hr>
+
+<a name="tableheaders"><h3>Table Column Headers</h3></a>
+<p>Use table header cells in place of <code>&lt;td&gt;</code> cells to add headers to each column</p>
+<div style="width: 300px; float: left;">
+<pre>
+<code>
+&lt;table&gt;
+&lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;th&gt;Header 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Row 1 Column 1&lt;/td&gt;
+    &lt;td&gt;Row 1 Column 2&lt;/td&gt;
+    &lt;td&gt;Row 1 Column 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Row 2 Column 1&lt;/td&gt;
+    &lt;td&gt;Row 2 Column 2&lt;/td&gt;
+    &lt;td&gt;Row 2 Column 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Row 3 Column 1&lt;/td&gt;
+    &lt;td&gt;Row 3 Column 2&lt;/td&gt;
+    &lt;td&gt;Row 3 Column 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+</code>
+</pre>
+</div>
+<div style="width: 500px; padding-top: 30px; float: left;">
+	<table width="100%" cellpadding="2" cellspacing="2" border="1">
+		<tr>
+			<th>Header 1</th>
+			<th>Header 2</th>
+			<th>Header 3</th>
+		</tr>
+		<tr>
+			<td>Row 1 Column 1</td>
+			<td>Row 1 Column 2</td>
+			<td>Row 1 Column 3</td>
+		</tr>
+		<tr>
+			<td>Row 2 Column 1</td>
+			<td>Row 2 Column 2</td>
+			<td>Row 2 Column 3</td>
+		</tr>
+		<tr>
+			<td>Row 3 Column 1</td>
+			<td>Row 3 Column 2</td>
+			<td>Row 3 Column 3</td>
+		</tr>
+	</table>
+</div>
+<br clear="all">
+
+
+<hr>
+
+<a name="captions"><h3>Table Captions</h3></a>
+<p>Use table captions to add titles centered above your tables.</p>
+<div style="width: 300px; float: left;">
+<pre>
+<code>
+&lt;table&gt;
+&lt;caption&gt;My Table&lt;/caption&gt;
+&lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;th&gt;Header 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Row 1 Column 1&lt;/td&gt;
+    &lt;td&gt;Row 1 Column 2&lt;/td&gt;
+    &lt;td&gt;Row 1 Column 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Row 2 Column 1&lt;/td&gt;
+    &lt;td&gt;Row 2 Column 2&lt;/td&gt;
+    &lt;td&gt;Row 2 Column 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;Row 3 Column 1&lt;/td&gt;
+    &lt;td&gt;Row 3 Column 2&lt;/td&gt;
+    &lt;td&gt;Row 3 Column 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+</code>
+</pre>
+</div>
+<div style="width: 500px; padding-top: 30px; float: left;">
+	<table width="100%" cellpadding="2" cellspacing="2" border="1">
+		<caption>My Table</caption>
+		<tr>
+			<th>Header 1</th>
+			<th>Header 2</th>
+			<th>Header 3</th>
+		</tr>
+		<tr>
+			<td>Row 1 Column 1</td>
+			<td>Row 1 Column 2</td>
+			<td>Row 1 Column 3</td>
+		</tr>
+		<tr>
+			<td>Row 2 Column 1</td>
+			<td>Row 2 Column 2</td>
+			<td>Row 2 Column 3</td>
+		</tr>
+		<tr>
+			<td>Row 3 Column 1</td>
+			<td>Row 3 Column 2</td>
+			<td>Row 3 Column 3</td>
+		</tr>
+	</table>
+</div>
+<br clear="all">
+
+<hr>
+
+<a name="links"><h3>Hyperlinks (Links)</h3></a>
+<p>Use the anchor tag <code>&lt;a href=""&gt;</code> to create links to other pages.</p>
+<code>&lt;a href="http://hawthornpto.org/"&gt;<a href="http://hawthornpto.org/" target="_blank">Click here to visit the PTO website</a>&lt;/a&gt;</code>
+</body>
+</html>
